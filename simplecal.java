@@ -44,7 +44,12 @@ public class BasicCalculator {
 
 		// case to divide two numbers
 		case '/':
-			o = num1 / num2;
+			if(num2==0){
+				System.out.println("Cannot Divide by Zero");
+			}
+			else{
+				o = num1 / num2;
+			}
 			break;
 
 		default:
